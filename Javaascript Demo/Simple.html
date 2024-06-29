@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Functions Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            margin: 20px;
+        }
+
+        button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript Functions Example</h1>
+
+        <a href="http://www.google.com" target="_blank" style="text-decoration:none"
+         onmouseover="mouseover();" onmouseout="mouseout();"  id="a1">Open Google</a>
+
+        <br />
+
+        <label id="lbl"></label>
+        <br />
+
+        <table>
+            <tr>
+                <td>Account Number</td>
+                <td><input type="password" onPaste="return false;" /></td>
+             </tr>
+            <tr>
+                <td>Confirm Account Number</td>
+                <td><input type="text" /></td>
+             </tr>
+        </table>
+
+        <h1>Addition</h1>
+
+        <table>
+            <tr>
+                <td><b>First Number</b></td>
+                <td>
+                     <input type="text" id="first" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                     <input type="button" value="Add" onclick="Addition()" />
+                </td>
+                <td>
+                     <input type="button" value="Clear" onclick="ClearValue()" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <lable id="result"></lable>
+                </td>
+            </tr>
+        </table>
+
+
+
+
+
+
+
+
+        <h2>Add Two Numbers</h2>
+        <input type="number" id="num1" placeholder="Enter first number">
+        <input type="number" id="num2" placeholder="Enter second number">
+        <button onclick="addNumbers()">Add</button>
+        <p id="sumResult"></p>
+
+        <h2>Change Text Content</h2>
+        <p id="textElement">This is the original text.</p>
+        <button onclick="changeText()">Change Text</button>
+
+        <h2>Display Date and Time</h2>
+        <button onclick="displayDateTime()">Show Date and Time</button>
+        <p id="dateTimeResult"></p>
+
+
+    </div>
+
+
+        <script src="Simpleone.js"></script>
+
+</body>
+</html>
