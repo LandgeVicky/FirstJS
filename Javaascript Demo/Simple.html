@@ -14,6 +14,16 @@
         button {
             margin-top: 10px;
         }
+
+        .containers {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
     </style>
 </head>
 <body>
@@ -21,7 +31,7 @@
         <h1>JavaScript Functions Example</h1>
 
         <a href="http://www.google.com" target="_blank" style="text-decoration:none"
-         onmouseover="mouseover();" onmouseout="mouseout();"  id="a1">Open Google</a>
+           onmouseover="mouseover();" onmouseout="mouseout();" id="a1">Open Google</a>
 
         <br />
 
@@ -32,11 +42,11 @@
             <tr>
                 <td>Account Number</td>
                 <td><input type="password" onPaste="return false;" /></td>
-             </tr>
+            </tr>
             <tr>
                 <td>Confirm Account Number</td>
                 <td><input type="text" /></td>
-             </tr>
+            </tr>
         </table>
 
         <h1>Addition</h1>
@@ -45,15 +55,15 @@
             <tr>
                 <td><b>First Number</b></td>
                 <td>
-                     <input type="text" id="first" />
+                    <input type="text" id="first" />
                 </td>
             </tr>
             <tr>
                 <td>
-                     <input type="button" value="Add" onclick="Addition()" />
+                    <input type="button" value="Add" onclick="Addition()" />
                 </td>
                 <td>
-                     <input type="button" value="Clear" onclick="ClearValue()" />
+                    <input type="button" value="Clear" onclick="ClearValue()" />
                 </td>
             </tr>
             <tr>
@@ -83,6 +93,11 @@
         <h2>Display Date and Time</h2>
         <button onclick="displayDateTime()">Show Date and Time</button>
         <p id="dateTimeResult"></p>
+
+        <div class="containers">
+            <h2>My Dream Car is Mercedes Benz E-Class</h2>
+            <img src="Images/istockphoto-472122163-612x612.jpg" alt="dreamcar" />
+        </div>
 
 
     </div>
